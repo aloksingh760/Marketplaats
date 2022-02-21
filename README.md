@@ -64,39 +64,40 @@ following is the key phases:
 4. data analystic
 5. final destination
 * What do you do to manage data quality issues?
-#1. Duplicate data:
+1. Duplicate data:
 Duplicate data is when the same data is entered multiple times, but in slightly different ways. Duplicate data is often created when extracting data from multiple siloed systems and merged together in a data warehouse, creating ‘copies’ of the same record. Duplication may produce skewed or incorrect insights when they go undetected.
-#2. Inconsistent formats:
+2. Inconsistent formats:
 Storing the same type of data in inconsistent formats is a common quality issue.
-#3. Incomplete information:
+3. Incomplete information:
 This data quality issue occurs when crucial pieces of information are missing, either as a result of failure to input it at the source system, or as a result of ETL processes.
-#4. Data inconsistency:
+4. Data inconsistency:
 Data inconsistency is the result of storing data in the same field that is either in a different language or in different units.
-#5. Inaccurate data:
+5. Inaccurate data:
 This is one of the most difficult data quality issues to spot, and occurs when the format is correct and every value is complete, but potential mis-spellings exist or the data is simply inaccurat
-#6. Invalid data
+6. Invalid data
 Data Invalidity is when your data can’t possibly correct based on simple rules or logic.
-#7. Data imprecision:
+7. Data imprecision:
 Data imprecision, or lack of precision is when data has been stored at a summarized level, as a result of an ETL process, that does not enable users to get to the level of detail they need for analysis.
 
 * What can you do to track data lineage in your approach?
 
-## Data lineage across the pipeline
+1. Data lineage across the pipeline
 To capture end-to-end lineage, data has to be tracked across every stage and process in the data pipeline. Here are the stages across which data lineage is performed:
 
-#Data Gathering Stage
+2. Data Gathering Stage
 The data gathering or ingestion stage is where data enters the core system. Data lineage can be used to track the vitals of the source and destination systems to validate the accuracy of the data, mappings, and transformations. Tracking the systems closely also helps in the easier identification of bugs.
 
-#Data Processing Stage
+3. Data Processing Stage
 Data processing takes up a huge percentage of the entire process of creating data solutions. It involves multiple transformations, filters, data types, tables, and storage locations. Recording metadata from each step doesn’t just help in compliance and production speed but also makes the development process richer and more productive. It enables developers to analyze the causes behind the success or failures of processes in higher detail.
 
-#Data Storing and Access Stage
+4. Data Storing and Access Stage
 Organizations usually deploy large data lakes to store their data. Data lineage can be used to track the access permissions, vitals of endpoints, and data transactions. This will increase the degree of automation of security and compliance, which is a huge bonus given the size and complexity of data lakes.
 
-#Data Querying Stage
+5. Data Querying Stage
 Users raise multiple data queries with a range of functions like joins and filters. Some functions can be heavy on the processors and therefore, less efficient. Data lineage can observe the queries to track and validate the processes and different versions of data resulting from them. Meanwhile, it also helps in optimizing the queries and provides reports including instances of optimal solutions. 
 
 * How will you ensure and validate scalability once you release this pipeline to production?
+
 Automate continuous delivery through a delivery using CI/CD pipeline
 
 * How will you ensure throughput performance?
