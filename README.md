@@ -2,7 +2,7 @@
 
 ## Summary
 
-The task is to load data from multiple sources and find data analystics  after clleaning and data trasnformation with optimized parrallel data processing. 
+The task is to load data from multiple sources and find data analystics  after cleaning and data trasnformation with optimized parrallel data processing using spark framework. 
 Code is written the solution in pyspark script. There is no any other dependecies required apart from Spark library and developed code package.
 
  
@@ -13,21 +13,33 @@ Go to project root folder and exeute below command:
 
 spark-submit --master local --py-files package.zip jobs/marketplaats.py --credit_fpath ./data/credit_limit_events.csv --country_fpath ./data/countries.csv --usersituation_fpath ./data/user_situation.csv --output_fpath result_output
 
-py-file: dependencies are zipped in util.zip file 
-credit_fpath: csv file path to credit_limit_events.csv
-country_fpath: csv file path to countries.csv
-usersituation_fpath: csv file path to user_situation.csv
-output_fpath: result output folder for this task
+#py-file: 
+dependencies are zipped in util.zip file 
+#credit_fpath:
+csv file path to credit_limit_events.csv
+#country_fpath:
+csv file path to countries.csv
+#usersituation_fpath:
+csv file path to user_situation.csv
+#output_fpath:
+result output folder for this task
 
-pyspark main file : jobs/marketplaats.py
-util packege: written cleaning and tranformation function
-depencedencie  : spark session initialisation
-pytranse: reading and writing data code
-package.zip : ziiped all packeges from project
-result_output : result output folder where spark job will write final data
-data : source data credit_limit_events.csv, countries.csv and user_situation.csv
+#pyspark main file:
+jobs/marketplaats.py
+#util packege:
+written cleaning and tranformation function
+#depencedencie:
+spark session initialisation
+#pytranse:
+reading and writing data code
+#package.zip:
+ziiped all packeges from project
+#result_output:
+result output folder where spark job will write final data
+#data: 
+source data credit_limit_events.csv, countries.csv and user_situation.csv
 
-Project Structure:
+#Project Structure:
 
 root/
  |-- dependencies/
