@@ -1,0 +1,8 @@
+UserId,EventTimestamp,CountryId,CreditLimit,Address,Postcode,Phone,UserSituationIds,Birthday,LastName,FirstName,UserSituationNames,CountryName,Capital,PhoneNumberCountryCode
+1,30/01/2021,4,5000,Carr de l'Europe,1000,+32 2 528 28 28,null,01/01/1987,Johnson,John,null,null,null,null
+2,01/01/2018,1,109093,Dorpsplein 3A,4532 AA,030 3458986,"\"[1]\"",03/12/1965,Anderson,Paul,ReceivesRegularIncome,The Netherlands,Amsterdam,+31
+3,20/02/2021,1,93401,Mendelssohnstraat 54d,3423 ba,0313-398475,"\"[1]\"",03/06/1964,Wicket,Steve,ReceivesRegularIncome,The Netherlands,Amsterdam,+31
+4,01/01/2018,1,54,Driehoog 3zwart,2340 CC,06-28938945,"\"[2]\"",04/09/1964,Benetar,Pat,OccasionalLatePayment,The Netherlands,Amsterdam,+31
+5,03/03/2021,1,314159.26,Vredenburg 21,3209 DD,06-48958986,"\"[1]\"",null,Gibson,Mal,ReceivesRegularIncome,The Netherlands,Amsterdam,+31
+6,01/01/2018,1,63.6,Sint Jansstraat 32,4220 EE,0885-291029,"\"[3]\"",10/08/1980,Friendly,User,HighDebt,The Netherlands,Amsterdam,+31
+7,01/01/2018,3,9898.3,Børkeßtrase 32,87823,+44 728 889838,null,20/09/1999,Smith,John,null,Germany,Berlin,+49
