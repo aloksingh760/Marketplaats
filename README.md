@@ -11,7 +11,7 @@ Code is written the solution in pyspark script. There is no any other dependecie
 Asssuming spark 2.7 is already installed.  
 Go to project root folder and exeute below command:
 
-spark-submit --master local --py-files util.zip jobs/marketplaats.py --credit_fpath ./data/credit_limit_events.csv --country_fpath ./data/countries.csv --usersituation_fpath ./data/user_situation.csv --output_fpath result_output
+spark-submit --master local --py-files package.zip jobs/marketplaats.py --credit_fpath ./data/credit_limit_events.csv --country_fpath ./data/countries.csv --usersituation_fpath ./data/user_situation.csv --output_fpath result_output
 
 py-file: dependencies are zipped in util.zip file 
 credit_fpath: csv file path to credit_limit_events.csv
@@ -19,6 +19,30 @@ country_fpath: csv file path to countries.csv
 usersituation_fpath: csv file path to user_situation.csv
 output_fpath: result output folder for this task
 
+pyspark main file : jobs/marketplaats.py
+util packege: written cleaning and tranformation function
+depencedencie  : spark session initialisation
+pytranse: reading and writing data code
+package.zip : ziiped all packeges from project
+result_output : result output folder where spark job will write final data
+data : source data credit_limit_events.csv, countries.csv and user_situation.csv
+
+Project Structure:
+
+root/
+ |-- dependencies/
+ |   |-- spark.py
+ |-- jobs/
+ |   |-- marketplaats.py
+ |-- pytranse/
+ |   |-- read.py
+ |   |-- write.py
+ |-- utils
+ |   |--util.py
+ |   package.zip
+ |   result_output
+ |   data
+ |   README.md
 
 * What are the key phases in the data pipeline?
 following is the key phases:
